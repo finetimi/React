@@ -8,7 +8,7 @@ var Home = require('../components/home');
 var Main = require('../components/main');
 var PromptContainer = require('../containers/PromptContainer');
 var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
-
+var ResultsContainer = require('../containers/ResultsContainer');
 var routes = (
 	<Router history = {hasHistory}>
 		<Route path = '/' component = {Main}>
@@ -16,6 +16,7 @@ var routes = (
 			<Route path= "playerone" header="Player One" component = {PromptContainer}/>
 			<Route path ="playertwo/:playerone" header ="Player Two" component={PromptContainer} />
 			<Route path = "battle" component = {ConfirmBattleContainer} />
+			<Route path = "results" component ={ResultsContainer} />
 		</Route>
 	</Router>
 
